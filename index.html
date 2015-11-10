@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Abofra</title>
+
+
+        <!--theme roller-->
+        <link href="css/abofra.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+        <!--theme roller-->
+
+
+        <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <!--<link rel="stylesheet" href="css/images/ajax-loader.gif">-->
+        <!--<script src="js/methods.js"></script>-->
+        <script src="js/methods.js" type="text/javascript"></script>
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+    </head>
+    <body>
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <div data-role="page" id="pageone" data-theme="c">
+            <div data-role="header">
+                <h1>Abofra</h1>
+            </div>
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <div role="main" class="ui-content">
+                <p>Please Enter Your Details</p>
+
+                <div data-role="fieldcontain">
+                    <label for="caretaker_name_signup">Caretaker Name:</label>
+                    <input type="text" name="caretaker_name" id="caretaker_name_signup" placeholder="Name of Caretaker">
+                    <div> &nbsp; </div>
+                    <label for="child_name">Child Name:</label>
+                    <input type="text" name="child_name" id="child_name" placeholder="Name of Child">
+                    <div> &nbsp; </div>
+                    <label for="child_age">Child Age:</label>
+                    <input type="text" name="child_age" id="child_age" placeholder="Age of Child">
+                    <div> &nbsp; </div>
+
+
+                    <label>Does you child have a disorder:</label>
+                    <fieldset data-role="controlgroup">
+                        <!--<legend></legend>-->
+                        <input type="radio" name="radio-choice-91"  id="radio-choice-91" value="1" checked="checked" />
+                        <label for="radio-choice-91">YES</label>
+
+                        <input type="radio" name="radio-choice-91"  id="radio-choice-92" value="2"  />
+                        <label for="radio-choice-92">NO</label>
+
+                    </fieldset>
+                    <div> &nbsp; </div>
+
+                    <label>What disorder:</label>
+                    <input type="text" name="disorder" id="disorder" placeholder="Type of Disorder">
+                    <div> &nbsp; </div>
+
+                    <label>Caretaker Address:</label>
+                    <input type="text" name="address" id="address" placeholder="P.O. Box CT9329, Accra Ghana">
+                    <div> &nbsp; </div>
+
+                    <label></label>
+                    <a href="index.html#thank_you_dialog" role="button" class="ui-shadow ui-btn ui-corner-all" data-transition="flip" onclick="submit()" >SUBMIT</a>
+                    <!--<input type="submit" id="submit" value="SUBMIT" onclick="submit()">-->
+                    <div> &nbsp; </div><label></label>
+
+                </div>
+                <!--</form>-->
+            </div>
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <div data-role="footer">
+                <h1>Del Works</h1>
+            </div>
+            <!--<a href="#pageone" data-transition="pop">Slide to Page</a>-->
+        </div>
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <div data-role="page" data-dialog="true" id="thank_you_dialog" data-theme="c">
+
+            <div data-role="header">
+                <h1>Thank You</h1>
+                <!--                <a href="#pageone" data-role="button" data-icon="" data-iconpos="right" class="ui-btn-left">Hi there <div id="user" class="user"></div></a>
+                                <a href="#pageone" data-role="button" data-icon="arrow-u" data-iconpos="right" class="ui-btn-right"  onclick="logout()">Logout</a>
+                                <div data-role="navbar"> 
+                                    <ul>
+                                        <li><a href="#home" data-icon="home" data-iconpos="left" class="ui-btn-active ui-state-persist" data-transition="slideup">Home</a></li>
+                                        <li><a href="#reserve" data-icon="arrow-d" data-iconpos="left" data-transition="pop" >Reserve</a></li>
+                                        <li><a href="#anylink" data-icon="search" data-iconpos="left" data-transition="slideup">Map</a></li>
+                                    </ul>
+                                </div>-->
+            </div>
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <div role="main" class="ui-content">
+                <h1>Thank You</h1>
+
+
+                <a href="index.html#welcome_after_signup" role="button" class="ui-shadow ui-btn ui-corner-all" data-transition="flip" onclick="welcomers()" >OKAY</a>
+
+
+            </div>
+        </div>
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <div data-role="page" id="welcome_after_signup" data-theme="c">
+
+            <div data-role="header">
+                <h1>Welcome</h1>
+                <a href="#pageone" data-role="button" data-icon="" data-iconpos="right" class="ui-btn-left"><div class="caretaker_name">Hi </div></a>
+                <a href="#pageone" data-role="button" data-icon="arrow-u" data-iconpos="right" class="ui-btn-right"  onclick="logout()">Logout</a>
+                <!--                <div data-role="navbar"> 
+                                    <ul>
+                                        <li><a href="#home" data-icon="home" data-iconpos="left" class="ui-btn-active ui-state-persist" data-transition="slideup">Home</a></li>
+                                        <li><a href="#reserve" data-icon="arrow-d" data-iconpos="left" data-transition="pop" >Reserve</a></li>
+                                        <li><a href="#anylink" data-icon="search" data-iconpos="left" data-transition="slideup">Map</a></li>
+                                    </ul>
+                                </div>-->
+                <!--classs="ui-btn-active ui-state-persist"-->
+            </div>
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <div role="main" class="ui-content">
+                <h1 class='childs_name'>Welcome</h1>
+
+                You are successfully subscribed onto the Inspire Abofra education.
+                <br>
+                You will start receiving course material from tomorrow.
+
+                <a href="index.html#tit_bits" role="button" class="ui-shadow ui-btn ui-corner-all" data-transition="flip" onclick='go_to_tit_bits()' >OKAY</a>
+
+                <div data-role="fieldcontain">
+
+                </div>
+
+            </div>
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+            <div data-role="footer">
+                <div data-role="controlgroup" data-type="horizontal">
+                    <!--<Caption of group:</p>-->
+                    <a href="#" data-icon="arrow-l"  data-role="button" data-rel="back">Go Back</a>
+                </div>
+            </div>
+            </div>
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <div data-role="page" id="tit_bits" data-theme="c">
+
+                <div data-role="header">
+                    <h1 class='childs_name'>Hello</h1>
+                    <a href="#pageone" data-role="button" data-icon="" data-iconpos="right" class="ui-btn-left"><div class="caretaker_name">Hi</div></a>
+                    <a href="#pageone" data-role="button" data-icon="arrow-u" data-iconpos="right" class="ui-btn-right" onclick="logout()">Logout</a>
+                    <!--                <div data-role="navbar"> 
+                                        <ul>
+                                            <li><a href="#home" data-icon="home" data-iconpos="left" class="ui-btn-active ui-state-persist" data-transition="slideup">Home</a></li>
+                                            <li><a href="#reserve" data-icon="arrow-d" data-iconpos="left" data-transition="pop" >Reserve</a></li>
+                                            <li><a href="#anylink" data-icon="search" data-iconpos="left" data-transition="slideup">Map</a></li>
+                                        </ul>
+                                    </div>-->
+                    <!--classs="ui-btn-active ui-state-persist"-->
+                </div>
+                <!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
+                <div role="main" class="ui-content">
+                    <h1 class='childs_name'>Tit Bits for Caretaker</h1>
+
+                    <!--                    1. Child care, sleep
+                                        2. Child nutrition.
+                                        3.
+                    
+                                        <div data-role="fieldcontain">
+                    
+                                        </div>-->
+
+                    <ol data-role="listview" data-inset="true" data-filter="true" id="tit_bits_list">
+                        <li>Child care, sleep</li>
+                            <li>Child nutrition</li>
+                            <li>Use of rewards</li>
+                    </ol>
+
+                </div>
+                <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+                <div data-role="footer">
+                    <div data-role="controlgroup" data-type="horizontal">
+                        <!--<Caption of group:</p>-->
+                        <a href="#" data-icon="arrow-l"  data-role="button" data-rel="back">Go Back</a>
+                    </div>
+                </div>
+            </div>
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - -- - - - - - - - - - - - - - - - - - - - - - - - - -  - - -->
+
+    </body>
+</html>

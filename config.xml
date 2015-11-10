@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<widget xmlns = "http://www.w3.org/ns/widgets" 
+        xmlns:gap = "http://phonegap.com/ns/1.0" 
+        id = "com.kingston.hw_tracker_teacher" 
+        versionCode = "01" version = "1.0.0" >
+    <!-- versionCode is opIonal and Android only -->
+    <name>HW Tracker</name>
+    <description>
+        Demo for MWC fall 2015
+    </description>
+    <author href="http://www.ashesi.edu.gh" email="kingston.coker@gmail.com">
+        Kingston Coker
+    </author>
+    <icon src="icon.png">
+    <gap:splash src="splash.png">
+</widget>
