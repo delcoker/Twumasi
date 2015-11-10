@@ -11,9 +11,9 @@ and open the template in the editor.
         id = "com.kingston.hw_tracker_teacher" 
         versionCode = "01" version = "1.0.0" >
     <!-- versionCode is opIonal and Android only -->
-    <name>HW Tracker</name>
+    <name>Abofra</name>
     <description>
-        Demo for MWC fall 2015
+        Helping Children
     </description>
     <author href="http://www.ashesi.edu.gh" email="kingston.coker@gmail.com">
         Kingston Coker
