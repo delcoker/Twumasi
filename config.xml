@@ -6,12 +6,11 @@
             
     </name>	
     <description>	
-        Demo 2 for	MWC	fall	2015	
+        Helping kids	
     </description>	
     <author href="http://www.ashesi.edu.gh" email="delcoker@gmail.com">	
         Kingston Coker		
     </author>	
     <icon src="icon.png"/>
     <gap:splash src="splash.png"/>
-    <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.2.0"/>
 </widget>
