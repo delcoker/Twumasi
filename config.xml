@@ -3,14 +3,13 @@
     <!--	versionCode	is	opIonal	and	Android	only	-->	
     <name>
         Abofra
-            
     </name>	
     <description>	
-        Helping kids	
+        Helping kids, helping Ghana
     </description>	
     <author href="http://www.ashesi.edu.gh" email="delcoker@gmail.com">	
         Kingston Coker		
     </author>	
-    <icon src="icon.png"/>
+    <icon src="coin.ico"/>
     <gap:splash src="splash.png"/>
 </widget>

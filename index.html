@@ -61,7 +61,7 @@
                     <div> &nbsp; </div>
 
                     <label></label>
-                    <a href="index.html#thank_you_dialog" role="button" class="ui-shadow ui-btn ui-corner-all" data-transition="flip" onclick="submit()" >SUBMIT</a>
+                    <a href="#thank_you_dialog" role="button" class="ui-shadow ui-btn ui-corner-all" data-transition="flip" onclick="submit()" >SUBMIT</a>
                     <!--<input type="submit" id="submit" value="SUBMIT" onclick="submit()">-->
                     <div> &nbsp; </div><label></label>
 
@@ -94,7 +94,7 @@
                 <h1>Thank You</h1>
 
 
-                <a href="index.html#welcome_after_signup" role="button" class="ui-shadow ui-btn ui-corner-all" data-transition="flip" onclick="welcomers()" >OKAY</a>
+                <a href="#welcome_after_signup" role="button" class="ui-shadow ui-btn ui-corner-all" data-transition="flip" onclick="welcomers()" >OKAY</a>
 
 
             </div>
@@ -123,7 +123,7 @@
                 <br>
                 You will start receiving course material from tomorrow.
 
-                <a href="index.html#tit_bits" role="button" class="ui-shadow ui-btn ui-corner-all" data-transition="flip" onclick='go_to_tit_bits()' >OKAY</a>
+                <a href="#tit_bits" role="button" class="ui-shadow ui-btn ui-corner-all" data-transition="flip" onclick="go_to_tit_bits()">OKAY</a>
 
                 <div data-role="fieldcontain">
 
@@ -137,51 +137,241 @@
                     <a href="#" data-icon="arrow-l"  data-role="button" data-rel="back">Go Back</a>
                 </div>
             </div>
+        </div>
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <div data-role="page" id="tit_bits" data-theme="c">
+
+            <div data-role="header">
+                <h1 class='childs_name'>Hello</h1>
+                <a href="#pageone" data-role="button" data-icon="" data-iconpos="right" class="ui-btn-left"><div class="caretaker_name">Hi</div></a>
+                <a href="#pageone" data-role="button" data-icon="arrow-u" data-iconpos="right" class="ui-btn-right" onclick="logout()">Logout</a>
             </div>
-            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-            <div data-role="page" id="tit_bits" data-theme="c">
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <div role="main" class="ui-content">
+                <h1>Tit Bits for Caretaker</h1>
 
-                <div data-role="header">
-                    <h1 class='childs_name'>Hello</h1>
-                    <a href="#pageone" data-role="button" data-icon="" data-iconpos="right" class="ui-btn-left"><div class="caretaker_name">Hi</div></a>
-                    <a href="#pageone" data-role="button" data-icon="arrow-u" data-iconpos="right" class="ui-btn-right" onclick="logout()">Logout</a>
-                    <!--                <div data-role="navbar"> 
-                                        <ul>
-                                            <li><a href="#home" data-icon="home" data-iconpos="left" class="ui-btn-active ui-state-persist" data-transition="slideup">Home</a></li>
-                                            <li><a href="#reserve" data-icon="arrow-d" data-iconpos="left" data-transition="pop" >Reserve</a></li>
-                                            <li><a href="#anylink" data-icon="search" data-iconpos="left" data-transition="slideup">Map</a></li>
-                                        </ul>
+                <!--                    1. Child care, sleep
+                                    2. Child nutrition.
+                                    3.
+                
+                                    <div data-role="fieldcontain">
+                
                                     </div>-->
-                    <!--classs="ui-btn-active ui-state-persist"-->
+
+                <ol data-role="listview" data-inset="true" data-filter="true" id="tit_bits_list">
+                    <li>Child care, sleep</li>
+                    <li>Child nutrition</li>
+                    <li>Use of rewards for controlling behaviour as opposed to punishments</li>
+                </ol>
+
+                Lessons start at 8am for an hour with 15 minutes break within 3 lessons
+
+                <a href="#socio_emotional_lessons" role="button" class="ui-shadow ui-btn ui-corner-all" data-transition="slidefade" onclick="start_lesson()" >Start</a>
+
+            </div>
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+            <div data-role="footer">
+                <div data-role="controlgroup" data-type="horizontal">
+                    <!--<Caption of group:</p>-->
+                    <a href="#" data-icon="arrow-l"  data-role="button" data-rel="back">Go Back</a>
                 </div>
-                <!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
-                <div role="main" class="ui-content">
-                    <h1 class='childs_name'>Tit Bits for Caretaker</h1>
+            </div>
+        </div>
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <div data-role="page" id="socio_emotional_lessons" data-theme="c">
 
-                    <!--                    1. Child care, sleep
-                                        2. Child nutrition.
-                                        3.
-                    
-                                        <div data-role="fieldcontain">
-                    
-                                        </div>-->
-
-                    <ol data-role="listview" data-inset="true" data-filter="true" id="tit_bits_list">
-                        <li>Child care, sleep</li>
-                            <li>Child nutrition</li>
-                            <li>Use of rewards</li>
-                    </ol>
-
+            <div data-role="header">
+                <h1 >Socio-Emotional</h1>
+                <a href="#pageone" data-role="button" data-icon="" data-iconpos="right" class="ui-btn-left"><div class="caretaker_name">Hi</div></a>
+                <a href="#pageone" data-role="button" data-icon="arrow-u" data-iconpos="right" class="ui-btn-right" onclick="logout()">Logout</a>
+                <div data-role="navbar"> 
+                    <ul>
+                        <li><a href="#socio_emotional_lessons" data-icon="home" data-iconpos="left" class="ui-btn-active ui-state-persist" data-transition="turn">Socio-Emotional</a></li>
+                        <li><a href="#psychomotor" data-icon="arrow-d" data-iconpos="left" data-transition="fade" >Psychomotor</a></li>
+                        <li><a href="#cognitive" data-icon="search" data-iconpos="left" data-transition="slidefade">Cognitive</a></li>
+                    </ul>
                 </div>
-                <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-                <div data-role="footer">
-                    <div data-role="controlgroup" data-type="horizontal">
-                        <!--<Caption of group:</p>-->
-                        <a href="#" data-icon="arrow-l"  data-role="button" data-rel="back">Go Back</a>
+                <!--classs="ui-btn-active ui-state-persist"-->
+            </div>
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <div role="main" class="ui-content">
+                <h1 class='childs_name_hello'>Hello</h1>
+
+                Good morning, welcome to today's lesson:
+
+                <div data-role="collapsible-set">
+                    <div data-role="collapsible">
+                        <h1>Socio-emotional</h1>
+                        <p>First Lesson</p>
+                        <ul data-role="listview" data-inset="true" data-filter="true" id="socio_sublist">
+                            <li>Rhymes</li>
+                            <li>Songs</li>
+                            <li>Poems</li>
+                        </ul>
+                        <p>Break - 5 mins</p>
+                    </div>
+                    <div data-role="collapsible">
+                        <h1>Psychomotor</h1>
+                        <p>Second Lesson</p>
+                        <ul data-role="listview" data-inset="true" data-filter="true" id="psycho_sublist">
+                            <li>Move</li>
+                            <li>Build</li>
+                            <li>Clap</li>
+                        </ul>
+                        <p>Break - 5 mins</p>
+                    </div>
+                    <div data-role="collapsible">
+                        <h1>Cognitive</h1>
+                        <p>Final Lesson</p>
+                        <ul data-role="listview" data-inset="true" data-filter="true" id="cognitive_sublist">
+                            <li>Cognitive 1</li>
+                            <li>Cognitive 2</li>
+                            <li>Cognitive 3</li>
+                        </ul>
+                        <p>Break - 5 mins</p>
                     </div>
                 </div>
+
             </div>
-        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - -- - - - - - - - - - - - - - - - - - - - - - - - - -  - - -->
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+            <div data-role="footer">
+                <div data-role="controlgroup" data-type="horizontal">
+                    <!--<Caption of group:</p>-->
+                    <a href="#" data-icon="arrow-l"  data-role="button" data-rel="back">Go Back</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - -->
+        <div data-role="page" id="psychomotor" data-theme="c">
+
+            <div data-role="header">
+                <h1>Psychomotor</h1>
+                <a href="#pageone" data-role="button" data-icon="" data-iconpos="right" class="ui-btn-left"><div class="caretaker_name">Hi</div></a>
+                <a href="#pageone" data-role="button" data-icon="arrow-u" data-iconpos="right" class="ui-btn-right" onclick="logout()">Logout</a>
+                <div data-role="navbar"> 
+                    <ul>
+                        <li><a href="#socio_emotional_lessons" data-icon="home" data-iconpos="left" data-transition="turn">Socio-Emotional</a></li>
+                        <li><a href="#psychomotor" data-icon="arrow-d" data-iconpos="left" class="ui-btn-active ui-state-persist" data-transition="fade" >Psychomotor</a></li>
+                        <li><a href="#cognitive" data-icon="search" data-iconpos="left" data-transition="slidefade">Cognitive</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <div role="main" class="ui-content">
+                <h1 class='childs_name_hello'>Hello</h1>
+
+                Good morning, welcome to today's lesson:
+
+                <div data-role="collapsible-set">
+                    <div data-role="collapsible">
+                        <h1>Socio-emotional</h1>
+                        <p>First Lesson</p>
+                        <ul data-role="listview" data-inset="true" data-filter="true" class="socio_sublist">
+                            <li>Rhymes</li>
+                            <li>Songs</li>
+                            <li>Poems</li>
+                        </ul>
+                        <p>Break - 5 mins</p>
+                    </div>
+                    <div data-role="collapsible">
+                        <h1>Psychomotor</h1>
+                        <p>Second Lesson</p>
+                        <ul data-role="listview" data-inset="true" data-filter="true" class="psycho_sublist">
+                            <li>Move</li>
+                            <li>Build</li>
+                            <li>Clap</li>
+                        </ul>
+                        <p>Break - 5 mins</p>
+                    </div>
+                    <div data-role="collapsible">
+                        <h1>Cognitive</h1>
+                        <p>Final Lesson</p>
+                        <ul data-role="listview" data-inset="true" data-filter="true" class="cognitive_sublist">
+                            <li>Cognitive 1</li>
+                            <li>Cognitive 2</li>
+                            <li>Cognitive 3</li>
+                        </ul>
+                        <p>Break - 5 mins</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+            <div data-role="footer">
+                <div data-role="controlgroup" data-type="horizontal">
+                    <!--<Caption of group:</p>-->
+                    <a href="#" data-icon="arrow-l"  data-role="button" data-rel="back">Go Back</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - -->
+        <div data-role="page" id="cognitive" data-theme="c">
+
+            <div data-role="header">
+                <h1 >Cognitive</h1>
+                <a href="#pageone" data-role="button" data-icon="" data-iconpos="right" class="ui-btn-left"><div class="caretaker_name">Hi</div></a>
+                <a href="#pageone" data-role="button" data-icon="arrow-u" data-iconpos="right" class="ui-btn-right" onclick="logout()">Logout</a>
+                <div data-role="navbar"> 
+                    <ul>
+                        <li><a href="#socio_emotional_lessons" data-icon="home" data-iconpos="left" data-transition="turn">Socio-Emotional</a></li>
+                        <li><a href="#psychomotor" data-icon="arrow-d" data-iconpos="left"  data-transition="fade" >Psychomotor</a></li>
+                        <li><a href="#cognitive" data-icon="search" data-iconpos="left" class="ui-btn-active ui-state-persist" data-transition="slidefade">Cognitive</a></li>
+                    </ul>
+                </div>
+                <!--classs="ui-btn-active ui-state-persist"-->
+            </div>
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <div role="main" class="ui-content">
+                <h1 class='childs_name_hello'>Hello</h1>
+
+                Good morning, welcome to today's lesson:
+
+                <div data-role="collapsible-set">
+                    <div data-role="collapsible">
+                        <h1>Socio-emotional</h1>
+                        <p>First Lesson</p>
+                        <ul data-role="listview" data-inset="true" data-filter="true" class="socio_sublist">
+                            <li>Rhymes</li>
+                            <li>Songs</li>
+                            <li>Poems</li>
+                        </ul>
+                        <p>Break - 5 mins</p>
+                    </div>
+                    <div data-role="collapsible">
+                        <h1>Psychomotor</h1>
+                        <p>Second Lesson</p>
+                        <ul data-role="listview" data-inset="true" data-filter="true" class="psycho_sublist">
+                            <li>Move</li>
+                            <li>Build</li>
+                            <li>Clap</li>
+                        </ul>
+                        <p>Break - 5 mins</p>
+                    </div>
+                    <div data-role="collapsible">
+                        <h1>Cognitive</h1>
+                        <p>Final Lesson</p>
+                        <ul data-role="listview" data-inset="true" data-filter="true" class="cognitive_sublist">
+                            <li>Cognitive 1</li>
+                            <li>Cognitive 2</li>
+                            <li>Cognitive 3</li>
+                        </ul>
+                        <p>Break - 5 mins</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+            <div data-role="footer">
+                <div data-role="controlgroup" data-type="horizontal">
+                    <!--<Caption of group:</p>-->
+                    <a href="#" data-icon="arrow-l"  data-role="button" data-rel="back">Go Back</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - -->
 
     </body>
 </html>

@@ -36,17 +36,20 @@ function first_page_get_info() {
 
 function submit() {
     first_page_get_info();
-    window.open("index.html#thank_you_dialog", "_self");
+//    window.open("index.html#thank_you_dialog", "_self");
 }
 
 function welcomers() {
     always();
-    window.open("index.html#welcome_after_signup", "_self");
+//    window.open("index.html#welcome_after_signup", "_self");
 
 }
 
 function go_to_tit_bits(){
-    window.open("index.html#tit_bits", "_self");
+//    window.open("index.html#tit_bits", "_self");
 }
 
-
+function start_lesson(){
+    $(".childs_name_hello").text("Hello " + child_name);
+//    window.open("index.html#start_lesson", "_self");
+}
