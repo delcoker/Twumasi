@@ -10,6 +10,6 @@
     <author href="http://www.ashesi.edu.gh" email="delcoker@gmail.com">	
         Kingston Coker		
     </author>	
-    <icon src="coin.ico"/>
+    <icon src="resources/coin.ico"/>
     <gap:splash src="splash.png"/>
 </widget>
