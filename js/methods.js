@@ -5,13 +5,13 @@
  */
 var caretaker = "Hi";
 var child_name = "Kwabena";
-var age = 1;
+var child_age = 1;
 
 
 function always() {
     $(".caretaker_name").text(caretaker);
-    $(".childs_name").text("Welcome " + child_name);
-    $(".child_age").text(age);
+    $(".childs_name").text("Welcome " + child_name + " " + child_age);
+//    $(".child_age").text(child_age);
 }
 
 function syncAjax(u) {
@@ -50,6 +50,6 @@ function go_to_tit_bits(){
 }
 
 function start_lesson(){
-    $(".childs_name_hello").text("Hello " + child_name);
+    $(".childs_name_hello").text("Hello " + child_name + " " + child_age);
 //    window.open("index.html#start_lesson", "_self");
 }
